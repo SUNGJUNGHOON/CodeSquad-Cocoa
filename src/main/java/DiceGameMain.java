@@ -1,10 +1,10 @@
 import java.util.Random;
 
-public class JumpGameMain {
+public class DiceGameMain {
     private int rollTheDice;
     private int[] jumpingDistance;
 
-    public JumpGameMain(int name, int rollTheDice) {
+    public DiceGameMain(int name, int rollTheDice) {
         this.rollTheDice = rollTheDice;
         jumpingDistance = new int[name];
     }
@@ -18,9 +18,9 @@ public class JumpGameMain {
     private void dropDice() {
         for (int j = 0; j < rollTheDice; j++) {
             randomDice();
-    }
+        }
         System.out.println();
-}
+    }
 
     private void randomDice() {
         Random random = new Random();
@@ -29,4 +29,3 @@ public class JumpGameMain {
         }
     }
 }
-
