@@ -1,3 +1,5 @@
+package mission;
+
 import java.util.Scanner;
 
 public class GugudanOne {
