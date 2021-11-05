@@ -1,8 +1,8 @@
-package algorithm;
+package baekjoon.q2438;
 
 import java.util.Scanner;
 
-public class BaekJoonEx3 {
+public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
