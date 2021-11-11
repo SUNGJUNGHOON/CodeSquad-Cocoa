@@ -1,14 +1,14 @@
-package mission;
+package accountBookStore;
 
 import java.util.*;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.Scanner;
 
-public class AccountEx {
+public class AccountBook {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Map member = new LinkedHashMap();
+        Map<Integer,Integer> member = new LinkedHashMap<>();
         login(member);
         System.out.println("가계부를 시작합니다");
         ArrayList<LinkedHashMap> dataList = new ArrayList<LinkedHashMap>();
@@ -24,7 +24,7 @@ public class AccountEx {
             input(dataList);
         }
         else if (answer == 2) {
-            modify(dataList);
+
         }
         else if (answer == 3) {
             delete(dataList);
@@ -63,13 +63,6 @@ public class AccountEx {
         dataList.add(data);
         menu(dataList);
         return dataList;
-
-    }
-
-    public static ArrayList<LinkedHashMap> modify(ArrayList<LinkedHashMap> dataList) {
-        Scanner scanner = new Scanner(System.in);
-
-
     }
 
     public static ArrayList<LinkedHashMap> delete(ArrayList<LinkedHashMap> dataList) {
