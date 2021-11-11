@@ -44,7 +44,8 @@ public class Account {
 
                 }
                 case 4: {
-
+                    showData();
+                    break;
                 }
                 case 5: {
                     System.out.println("가계부를 종료합니다");
@@ -68,6 +69,16 @@ public class Account {
 
         AccountData accountData = new AccountData(date, summary, income, expend);
         accounts.add(accountData);
+    }
+
+    private static void showData() {
+        for (AccountData account : accounts) {
+            System.out.println("날짜는 " + account.getDate() + "입니다.");
+            System.out.println("적요는 " + account.getSummary() + "입니다.");
+            System.out.println("수입은 " + account.getIncome() + "입니다.");
+            System.out.println("지출은 " + account.getExpend() + "입니다.");
+            System.out.println("---------");
+        }
     }
 }
 
