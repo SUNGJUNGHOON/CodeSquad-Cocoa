@@ -71,14 +71,20 @@ public class Account {
 
         AccountData accountData = new AccountData(date, summary, income, expend);
         accounts.add(accountData);
+
     }
 
     private static void reviseData() {
 
     }
 
-    private static void deleteData() {
+    private static void deleteData(AccountData accountData) {
+        Scanner scanner = new Scanner(System.in);
 
+        System.out.println("삭제할 항목을 선택하세요");
+        accountData.remove(scanner.nextInt() - 1);
+        System.out.println("삭제를 완료 하였습니다");
+        return;
     }
 
     private static void showData() {
