@@ -38,10 +38,12 @@ public class Account {
                     break;
                 }
                 case 2: {
-
+                    reviseData();
+                    break;
                 }
                 case 3: {
-
+                    deleteData();
+                    break;
                 }
                 case 4: {
                     showData();
@@ -69,6 +71,14 @@ public class Account {
 
         AccountData accountData = new AccountData(date, summary, income, expend);
         accounts.add(accountData);
+    }
+
+    private static void reviseData() {
+
+    }
+
+    private static void deleteData() {
+
     }
 
     private static void showData() {
