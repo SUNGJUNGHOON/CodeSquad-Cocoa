@@ -78,9 +78,15 @@ public class Account {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("수정할 항목을 선택하세요");
-        int revise = scanner.nextInt();
+        int reviseNum = Integer.parseInt(scanner.nextLine()) - 1;
+        AccountData account = accounts.get(reviseNum);
 
-        if (revise == 1) {
+        if (reviseNum == 1) {
+            String updateDate = scanner.nextLine();
+            String updateSummary = scanner.nextLine();
+            String updateIncome = scanner.nextLine();
+            String updateExpend = scanner.nextLine();
+            accounts.update(updateDate, updateSummary, updateIncome, updateExpend);
 
         }
     }
