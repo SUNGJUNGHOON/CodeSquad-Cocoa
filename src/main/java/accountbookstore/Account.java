@@ -75,14 +75,21 @@ public class Account {
     }
 
     private static void reviseData() {
+        Scanner scanner = new Scanner(System.in);
 
+        System.out.println("수정할 항목을 선택하세요");
+        int revise = scanner.nextInt();
+
+        if (revise == 1) {
+
+        }
     }
 
-    private static void deleteData(AccountData accountData) {
+    private static void deleteData() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("삭제할 항목을 선택하세요");
-        accountData.remove(scanner.nextInt() - 1);
+        accounts.remove(scanner.nextInt() - 1);
         System.out.println("삭제를 완료 하였습니다");
         return;
     }
