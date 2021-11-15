@@ -6,6 +6,7 @@ public class AccountData {
     private String income;
     private String expend;
 
+
     public AccountData(String date, String summary, String income, String expend) {
         this.date = date;
         this.summary = summary;

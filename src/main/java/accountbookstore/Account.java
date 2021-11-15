@@ -79,14 +79,13 @@ public class Account {
 
         System.out.println("수정할 항목을 선택하세요");
         int reviseNum = Integer.parseInt(scanner.nextLine()) - 1;
-        AccountData account = accounts.get(reviseNum);
+        AccountData newData = accounts.get(reviseNum);
 
         if (reviseNum == 1) {
             String updateDate = scanner.nextLine();
             String updateSummary = scanner.nextLine();
             String updateIncome = scanner.nextLine();
             String updateExpend = scanner.nextLine();
-            accounts.update(updateDate, updateSummary, updateIncome, updateExpend);
 
         }
     }
